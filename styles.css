@@ -1,0 +1,162 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffe1c3;
+    color: #5a4632;
+}
+
+header {
+    background-color: #d4a373;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    height: 40px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 0;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+section {
+    width: 100%;
+}
+
+section#home {
+    background-color: #ffead5;
+    border-radius: 10px;
+}
+
+section#about, section#menu, section#contact {
+    background-color: #ffead5;
+    border-bottom: 1px solid #e0e0e0;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #5a4632;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+}
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-list li {
+    background-color: #f9f5f1;
+    border: 1px solid #d4a373;
+    border-radius: 8px;
+    margin: 10px 0;
+    padding: 15px;
+    text-align: left;
+}
+
+.menu-list h3 {
+    margin: 0 0 10px 0;
+    color: #5a4632;
+}
+
+.menu-list p {
+    margin: 0;
+}
+
+#bebidas {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+#bebidas .menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#bebidas .menu-list li {
+    background-color: #f9f5f1;
+    border: 1px solid #d4a373;
+    border-radius: 8px;
+    margin: 10px 0;
+    padding: 15px;
+    text-align: left;
+}
+
+#bebidas .menu-list h3 {
+    margin: 0 0 10px 0;
+    color: #5a4632;
+}
+
+#bebidas .menu-list p {
+    margin: 0;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    main, section {
+        padding: 10px;
+    }
+
+    header .logo img {
+        height: 30px;
+    }
+
+    header nav ul li {
+        margin: 5px 0;
+    }
+}
